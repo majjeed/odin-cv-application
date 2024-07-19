@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "../styles/App.css";
+import Info from "./Info";
+import School from "./School";
+import Work from "./Work";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
               number.
             </p>
           </section>
+          <Info />
+          <School />
+          <Work />
           <section>
             A section to add your educational experience (school name, title of
             study and date of study)
