@@ -27,7 +27,7 @@ export default function Work() {
 
   return (
     <>
-      <p>Work Experience</p>
+      <h2>Work Experience</h2>
       {exp.length > 0
         ? exp.map((el) => (
             <Experience key={el.id} {...el} updatedExp={updatedExp} />
@@ -91,8 +91,6 @@ function Experience({
     <>
       {editable ? (
         <div className="work">
-          <label htmlFor="id">ID</label>
-          <input type="text" name="id" value={id} />
           <label htmlFor={`companyName-${id}`}>Company Name</label>
           <input
             type="text"
@@ -137,7 +135,6 @@ function Experience({
         </div>
       ) : (
         <div className="work">
-          <h3>Id: {id}</h3>
           <h3>Company Name: {companyName}</h3>
           <h3>Position Title: {positionTitle}</h3>
           <h3>Job Description & Main Responsibilities: {description}</h3>

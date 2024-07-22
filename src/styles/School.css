@@ -3,21 +3,28 @@
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .school label {
   font-weight: bold;
   margin-top: 10px;
+  align-self: flex-start;
+  margin-bottom: 15px;
 }
 
 .school input {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin: 5px 0;
   border: 1px solid #ddd;
   border-radius: 5px;
+  display: block;
 }
 
 .school button {

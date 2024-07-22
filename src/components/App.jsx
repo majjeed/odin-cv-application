@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "../styles/App.css";
 import Info from "./Info";
 import School from "./School";
@@ -11,31 +10,31 @@ function App() {
       <div className="columns">
         <nav>Navigation</nav>
         <main>
-          <h1>Main</h1>
+          <h1>Continue with your Application</h1>
           <section>
             <p>
-              A section to add general information like name, email and phone
-              number.
+              Thank you for your interest in the position at the Company. We
+              appreciate the time you took to apply.
+            </p>
+            <p>
+              To proceed with your application, could you please upload your CV
+              down below? Your CV will help us better understand your
+              qualifications and experiences.
             </p>
           </section>
           <Info />
           <School />
           <Work />
           <section>
-            A section to add your educational experience (school name, title of
-            study and date of study)
-          </section>
-          <section>
             <p>
-              A section to add practical experience (company name, position
-              title, main responsibilities of your jobs, date from and until
-              when you worked for that company)
+              Thank you again for considering a career with The Company. We look
+              forward to reviewing your application.
             </p>
           </section>
         </main>
         <aside>Sidebar</aside>
       </div>
-      <footer>Footer</footer>
+      <footer>© 2024 The Company. All rights reserved.</footer>
     </>
   );
 }

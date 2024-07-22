@@ -25,7 +25,7 @@ export default function School() {
 
   return (
     <>
-      <p>Education</p>
+      <h2>Education</h2>
       {exp.length > 0
         ? exp.map((el) => (
             <Experience key={el.id} {...el} updatedExp={updatedExp} />
@@ -66,8 +66,6 @@ function Experience({ id, name, title, date, editable, updatedExp }) {
     <>
       {editable ? (
         <div className="school">
-          <label htmlFor="id">ID</label>
-          <input type="text" name="id" value={id} />
           <label htmlFor={`name-${id}`}>Name</label>
           <input
             type="text"
@@ -96,7 +94,6 @@ function Experience({ id, name, title, date, editable, updatedExp }) {
         </div>
       ) : (
         <div className="school">
-          <h3>Id: {id}</h3>
           <h3>Name: {name}</h3>
           <h3>Title: {title}</h3>
           <h3>Date: {date}</h3>
