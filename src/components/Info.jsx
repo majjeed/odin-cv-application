@@ -33,7 +33,7 @@ export default function Info() {
     <>
       <h2>General Information</h2>
       {info.editable ? (
-        <div className="info-edit">
+        <div className="info">
           <label htmlFor="name">Name: </label>
           <input
             type="text"
@@ -58,12 +58,12 @@ export default function Info() {
           <button onClick={handleEdit}>Submit</button>
         </div>
       ) : (
-        <>
+        <div className="info">
           <h3>Name: {info.name}</h3>
           <h3>Email Address: {info.email}</h3>
           <h3>Phone Number: {info.phone}</h3>
           <button onClick={handleEdit}>Edit</button>
-        </>
+        </div>
       )}
     </>
   );

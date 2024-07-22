@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/Work.css";
 
 export default function Work() {
   const [exp, setExp] = useState([]);
@@ -89,7 +90,7 @@ function Experience({
   return (
     <>
       {editable ? (
-        <>
+        <div className="work">
           <label htmlFor="id">ID</label>
           <input type="text" name="id" value={id} />
           <label htmlFor={`companyName-${id}`}>Company Name</label>
@@ -133,9 +134,9 @@ function Experience({
             onChange={handleInputChange}
           />
           <button onClick={handleSubmit}>Submit</button>
-        </>
+        </div>
       ) : (
-        <>
+        <div className="work">
           <h3>Id: {id}</h3>
           <h3>Company Name: {companyName}</h3>
           <h3>Position Title: {positionTitle}</h3>
@@ -143,7 +144,7 @@ function Experience({
           <h3>Start Date: {startDate}</h3>
           <h3>End Date: {endDate}</h3>
           <button onClick={handleEdit}>Edit</button>
-        </>
+        </div>
       )}
     </>
   );

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/School.css";
 
 export default function School() {
   const [exp, setExp] = useState([]);
@@ -64,7 +65,7 @@ function Experience({ id, name, title, date, editable, updatedExp }) {
   return (
     <>
       {editable ? (
-        <>
+        <div className="school">
           <label htmlFor="id">ID</label>
           <input type="text" name="id" value={id} />
           <label htmlFor={`name-${id}`}>Name</label>
@@ -92,15 +93,15 @@ function Experience({ id, name, title, date, editable, updatedExp }) {
             onChange={handleInputChange}
           />
           <button onClick={handleSubmit}>Submit</button>
-        </>
+        </div>
       ) : (
-        <>
+        <div className="school">
           <h3>Id: {id}</h3>
           <h3>Name: {name}</h3>
           <h3>Title: {title}</h3>
           <h3>Date: {date}</h3>
           <button onClick={handleEdit}>Edit</button>
-        </>
+        </div>
       )}
     </>
   );

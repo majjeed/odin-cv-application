@@ -1,21 +1,18 @@
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.school {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
-label {
+.school label {
   font-weight: bold;
   margin-top: 10px;
 }
 
-input {
+.school input {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
@@ -23,7 +20,7 @@ input {
   border-radius: 5px;
 }
 
-button {
-  align-self: center;
+.school button {
+  align-items: center;
   margin-top: 20px;
 }

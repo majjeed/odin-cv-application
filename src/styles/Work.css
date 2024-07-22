@@ -1,7 +1,4 @@
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.work {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -10,12 +7,12 @@
   border-radius: 5px;
 }
 
-label {
+.work label {
   font-weight: bold;
   margin-top: 10px;
 }
 
-input {
+.work input {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
@@ -23,7 +20,7 @@ input {
   border-radius: 5px;
 }
 
-button {
+.work button {
   align-self: center;
   margin-top: 20px;
 }
